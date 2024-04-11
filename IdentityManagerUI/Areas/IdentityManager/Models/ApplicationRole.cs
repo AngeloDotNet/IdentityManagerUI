@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace IdentityManagerUI.Models
 {
@@ -10,8 +7,7 @@ namespace IdentityManagerUI.Models
     {
         public ApplicationRole() { }
 
-        public ApplicationRole(string roleName)
-            : base(roleName) { }
+        public ApplicationRole(string roleName) : base(roleName) { }
 
         public virtual ICollection<IdentityRoleClaim<string>> Claims { get; set; }
     }
